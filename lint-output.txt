@@ -1,0 +1,13 @@
+
+> react-example@0.0.0 lint
+> tsc --noEmit
+
+src/pages/HealthDashboard.tsx(23,22): error TS2339: Property 'bluetooth' does not exist on type 'Navigator'.
+src/pages/HealthDashboard.tsx(28,38): error TS2339: Property 'bluetooth' does not exist on type 'Navigator'.
+src/pages/Team.tsx(5,21): error TS2307: Cannot find module '../assets/doctor1.jpg' or its corresponding type declarations.
+src/pages/Team.tsx(6,21): error TS2307: Cannot find module '../assets/doctor2.jpg' or its corresponding type declarations.
+src/pages/Team.tsx(7,21): error TS2307: Cannot find module '../assets/doctor3.jpg' or its corresponding type declarations.
+src/pages/Team.tsx(8,21): error TS2307: Cannot find module '../assets/doctor4.jpg' or its corresponding type declarations.
+src/pages/Team.tsx(9,21): error TS2307: Cannot find module '../assets/doctor5.jpg' or its corresponding type declarations.
+src/pages/Team.tsx(10,21): error TS2307: Cannot find module '../assets/doctor6.jpg' or its corresponding type declarations.
+src/pages/Team.tsx(11,21): error TS2307: Cannot find module '../assets/doctor7.jpg' or its corresponding type declarations.

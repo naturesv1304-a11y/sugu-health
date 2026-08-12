@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ✅ Theme */
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ✅ Global Styles */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   🔥 PREMIUM UI UTILITIES
+========================= */
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+}
+
+.modern-card {
+  @apply bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300;
+}
+
+/* =========================
+   🔥 BUTTON STYLES
+========================= */
+
+.btn-base {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md;
+}
+
+.btn-red {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-rose-500 to-red-500 text-white hover:from-rose-600 hover:to-red-600 shadow-rose-500/20;
+}
+
+.btn-blue {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 shadow-blue-500/20;
+}
+
+.btn-green {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-emerald-400 to-green-500 text-white hover:from-emerald-500 hover:to-green-600 shadow-green-500/20;
+}
+
+.btn-teal {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-teal-400 to-emerald-500 text-white hover:from-teal-500 hover:to-emerald-600 shadow-teal-500/20;
+}
+
+.btn-purple {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white hover:from-purple-600 hover:to-fuchsia-600 shadow-purple-500/20;
+}
+
+.btn-yellow {
+  @apply flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-amber-400 to-orange-500 text-white hover:from-amber-500 hover:to-orange-600 shadow-amber-500/20;
+}
+
+/* =========================
+   📦 MODAL STYLES
+========================= */
+
+.modal {
+  @apply fixed inset-0 bg-slate-900/40 backdrop-blur-sm flex justify-center items-center z-50;
+}
+
+.card {
+  @apply bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 w-80;
+}
+
+/* =========================
+   📅 BOOKING BUTTONS
+========================= */
+
+.slot-btn {
+  @apply block border border-slate-200 p-3 w-full my-2 rounded-xl hover:bg-indigo-50 hover:border-indigo-200 hover:text-indigo-700 transition-all font-medium text-slate-600 text-center;
+}
+
+.pay-btn {
+  @apply flex items-center justify-center gap-2 px-5 rounded-full text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 shadow-blue-500/20 w-full mt-4 py-3;
+}
+
+/* =========================
+   💬 CHAT UI
+========================= */
+
+.chat-box {
+  @apply fixed bottom-6 right-6 bg-white/70 backdrop-blur-xl border border-white/20 rounded-3xl p-5 w-80 z-50 shadow-[0_20px_40px_rgba(0,0,0,0.1)];
+}
+
+.chat-messages {
+  @apply h-48 bg-slate-50 p-3 mb-3 overflow-y-auto rounded-2xl border border-slate-100;
+}
+
+/* =========================
+   🎥 VIDEO MODAL
+========================= */
+
+.video-frame {
+  @apply w-full h-[500px] rounded-3xl shadow-xl overflow-hidden;
+}
+
+/* =========================
+   ✨ EXTRA UI IMPROVEMENTS
+========================= */
+
+input, textarea, select {
+  @apply bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:bg-white transition-all;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
